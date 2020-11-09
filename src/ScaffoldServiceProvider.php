@@ -4,7 +4,7 @@ namespace Hodoyoi\LaravelSimpleScaffold;
 
 use Illuminate\Support\ServiceProvider;
 
-class SimpleScaffoldServiceProvider extends ServiceProvider
+class ScaffoldServiceProvider extends ServiceProvider
 {
     /**
      * Register services.

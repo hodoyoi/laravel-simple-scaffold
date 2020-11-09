@@ -1,5 +1,6 @@
 {
     "name": "hodoyoi/laravel-simple-scaffold",
+    "description": "A simple CRUD stubs generator.",
     "type": "composer-plugin",
     "authors": [
         {
@@ -15,6 +16,13 @@
     "autoload": {
         "psr-4": {
             "Hodoyoi\\LaravelSimpleScaffold\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hodoyoi\\LaravelSimpleScaffold\\ScaffoldServiceProvider"
+            ]
         }
     }
 }
