@@ -1,7 +1,6 @@
 {
     "name": "hodoyoi/laravel-simple-scaffold",
     "description": "A simple CRUD stubs generator.",
-    "type": "composer-plugin",
     "authors": [
         {
             "name": "gen0e0",
