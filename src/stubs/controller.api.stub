@@ -1,0 +1,69 @@
+<?php
+
+namespace {{ namespace }};
+
+use {{ rootNamespace }}Http\Controllers\Controller;
+use Illuminate\Http\Request;
+
+class {{ class }} extends Controller
+{
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        ${{ modelVariablePlural }} = {{ model }}::query()->get();
+
+        return response()->json($employees);
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        $employee = Employee::create($request->validated());
+        return response()->json($employee);
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  Employee  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show((Employee $employee)
+    {
+        return response()->json($employee);
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, Employee $employee)
+    {
+        $employee = $employee->update($request->validate([]));
+        return response()->json($employee);
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy(Employee $employee)
+    {
+        $result = $employee->delete();
+        return response()->json($result);
+    }
+}
