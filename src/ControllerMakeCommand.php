@@ -1,6 +1,6 @@
 <?php
 
-namespace Hodoyoi\SimpleScaffold;
+namespace Hodoyoi\LaravelSimpleScaffold;
 
 use Illuminate\Support\Str;
 use InvalidArgumentException;

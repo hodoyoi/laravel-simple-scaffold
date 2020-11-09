@@ -1,5 +1,5 @@
 {
-    "name": "hodoyoi/simple-scaffold",
+    "name": "hodoyoi/laravel-simple-scaffold",
     "type": "composer-plugin",
     "authors": [
         {
@@ -8,11 +8,13 @@
         }
     ],
     "license": "MIT",
-    "require": {},
+    "require": {
+      "php": ">=7.0"
+    },
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "Hodoyoi\\SimpleScaffold\\": "src/"
+            "Hodoyoi\\LaravelSimpleScaffold\\": "src/"
         }
     }
 }
